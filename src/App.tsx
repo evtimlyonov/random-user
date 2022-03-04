@@ -53,6 +53,7 @@ export const App = () => {
         name: `${rawPerson.name.first} ${rawPerson.name.last}`,
       };
       setPerson(newPerson);
+      setTitle('name');
       setValue(`${rawPerson.name.first} ${rawPerson.name.last}`);
       setLoading(false);
     } catch (err) {
